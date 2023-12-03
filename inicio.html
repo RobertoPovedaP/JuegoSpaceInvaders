@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Vincula el archivo de estilos CSS -->
     <link rel="stylesheet" href="css/estilo.css">
+    
     <title>Space Invaders</title>
 </head>
 <body>
-    <!-- Contenedor principal del juego -->
-    <div id="game-container">
-        <!-- Nave espacial del jugador -->
-        <div id="ship"></div>
-        <!-- Invader (enemigo) - Puedes duplicar este div según sea necesario -->
-        <div class="invader"></div>
-    </div>
+    <!-- Contenedor principal del juego con la etiqueta canvas -->
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <div id="levelMessage"></div>
+    <!-- Vincula el archivo de lógica del juego en JavaScript -->
     <script src="js/juego.js"></script>
 </body>
 </html>
